@@ -75,7 +75,57 @@ li a:hover {
   border-bottom: #ffffff 2px solid;
 }
 
-/*Content*/
+/*Home Page*/
+
+/*Contact Form*/
+
+.contact-container {
+  margin: auto;
+  padding: 10px 0 40px 0;
+  align-content: center;
+  width: 60%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.contact-form {
+  margin: auto;
+  width: 80%;
+}
+
+div .input,
+h2 {
+  color: #ffffff;
+}
+
+input[type="text"] {
+  width: 100%;
+  border: solid 1px lightgrey;
+  height: 20px;
+  padding: 10px 0;
+  outline: none;
+}
+
+textarea {
+  width: 100%;
+  border: solid 1px lightgrey;
+  height: 150px;
+  padding: 10px 0;
+  outline: none;
+}
+
+button {
+  height: 35px;
+  background-color: #040d8d;
+  color: #ffffff;
+  border: none;
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.error {
+  color: red;
+  display: none;
+}
 
 /*Footer*/
 

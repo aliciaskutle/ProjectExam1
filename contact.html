@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>NASA - International Space Station</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="nasa-iss" />
+    <meta
+      name="keywords"
+      content="nasa, spacex, science, explore, iss, spaceactivity, space station"
+    />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="body-wrap-index">
+      <header>
+        <div class="top-menu">
+          <nav>
+            <div class="menu-logo">
+              <a href="index.html">
+                <img src="images/logo.png" alt="nasa logo" id="logo" />
+              </a>
+            </div>
+            <div class="menu-links">
+              <ul class="nav-links">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="location.html">Location</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <section>
+            <div class="contact-container">
+                <div class="contact-form">
+                    <div class="col-sm-12">
+                        <h2>Contact us<h2>
+                    </div>
+                
+                    <div class="input">
+                        <br>Name: <br>
+                        <input type="text" name="firstName" id="firstName">
+                        <span class="error" id="firstNameError">This field cannot be blank</span>
+                    </div>
+                    <div class="input">
+                        <br>Last Name: <br>
+                        <input type="text" name="lastName" id="lastName">
+                        <span class="error" id="lastNameError">This field cannot be blank</span>
+                    </div>
+                    <div class="input">
+                        <br>Email: <br>
+                        <input type="text" name="email" id="email">
+                        <span class="error" id="emailError">Please enter a correct email address</span>
+                    </div>
+                    <div class="input">
+                            <br>Your message: <br>
+                         <textarea
+                            id="subject"
+                            name="subject"
+                            placeholder="Your message.."
+                          ></textarea>
+                    </div>
+                    <div class="input">
+                        <button type="submit" id="submitContact">Submit</button>
+                    </div>
+              </div>
+            </div>
+        </section>
+
+      <footer>
+        <p>© Alicia Skutle 2019</p>
+      </footer>
+
+      <script src="scripts/contact.js"></script>
+
+    </div>
+  </body>
+</html>
+
+
