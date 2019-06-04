@@ -27,7 +27,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 1000px;
+  height: 950px;
 }
 
 /*Header*/
@@ -80,10 +80,10 @@ li a:hover {
 /*Contact Form*/
 
 .contact-container {
-  margin: auto;
+  margin: 20px auto;
   padding: 10px 0 40px 0;
   align-content: center;
-  width: 60%;
+  width: 55%;
   background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -95,6 +95,10 @@ li a:hover {
 div .input,
 h2 {
   color: #ffffff;
+}
+
+h2 {
+  font-size: 40px;
 }
 
 input[type="text"] {
