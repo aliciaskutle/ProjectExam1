@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>NASA - International Space Station</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="nasa-iss" />
+    <meta
+      name="keywords"
+      content="nasa, spacex, science, explore, iss, spaceactivity, space station"
+    />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="body-wrap-index">
+      <header>
+        <div class="top-menu">
+          <nav>
+            <span class="nav-menu-button" id="menu-button">
+              <img
+                src="images/toggle.svg"
+                alt="menu toggle logo"
+                id="toggle-logo"
+              />
+            </span>
+            <div class="menu-logo">
+              <a href="index.html">
+                <img src="images/logo.png" alt="nasa logo" id="logo" />
+              </a>
+            </div>
+            <div class="menu-links" id="js-menu">
+              <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="about.html">About</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="location.html">Location</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <div class="slideshow-wrap">
+        <div class="slideshow-container">
+          <div class="mySlides">
+            <div class="numbertext">1 / 6<div>
+            <img src="images/slide1.jpg" style="width:100%" />
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+            <img src="images/slide2.jpg" style="width:100%" />
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+            <img src="images/slide3.jpg" style="width:100%" />
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+            <img src="images/slide4.jpg" style="width:100%" />
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+            <img src="images/slide5.jpg" style="width:100%" />
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+            <img src="images/slide6.jpg" style="width:100%" />
+          </div>
+
+          <a class="previous" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+          <div class="row">
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="images/slide1.jpg"
+                style="width:100%"
+                onclick="currentSlide(1)"
+                alt="The International Space Station"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="images/slide2.jpg"
+                style="width:100%"
+                onclick="currentSlide(2)"
+                alt="Space Walk outside the ISS"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="images/slide3.jpg"
+                style="width:100%"
+                onclick="currentSlide(3)"
+                alt="Astronaut Selfie"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="images/slide4.jpg"
+                style="width:100%"
+                onclick="currentSlide(4)"
+                alt="The view from the ISS"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="images/slide5.jpg"
+                style="width:100%"
+                onclick="currentSlide(5)"
+                alt="Satelitte"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="images/slide6.jpg"
+                style="width:100%"
+                onclick="currentSlide(6)"
+                alt="Space Walk"
+              />
+            </div>
+        </div>
+      </div>
+
+      <footer>
+        <p>© Alicia Skutle 2019</p>
+      </footer>
+      <script src="scripts/about.js"></script>
+    </div>
+  </body>
+</html>
