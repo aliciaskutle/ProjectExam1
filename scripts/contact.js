@@ -10,25 +10,21 @@ firstName.focus();
 var emailRegex = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/g;
 var phoneRegex = /^(\d{3}[\- .]\d{3}[\- .]\d{4})$/;
 
-var validationErrors = [];
-
-function arrayContainsString(arrayToSearchIn, stringToSearchFor) {
-  return arrayToSearchIn.includes(stringToSearchFor);
-}
+var validFields = [];
 
 //Validate firstname
 firstName.addEventListener("blur", function() {
   if (firstName.value === "") {
     document.getElementById("firstNameError").style.display = "block";
-    if (!arrayContainsString(validationErrors, "firstNameError")) {
-      validationErrors.push("firstNameError");
+    if (validFields.includes("firstName")) {
+      validFields = validFields.filter(
+        validationError => validationError !== "firstName"
+      );
     }
   } else {
     document.getElementById("firstNameError").style.display = "none";
-    if (arrayContainsString(validationErrors, "firstNameError")) {
-      validationErrors = validationErrors.filter(
-        validationError => validationError !== "firstNameError"
-      );
+    if (!validFields.includes("firstName")) {
+      validFields.push("firstName");
     }
   }
 });
@@ -37,15 +33,15 @@ firstName.addEventListener("blur", function() {
 lastName.addEventListener("blur", function() {
   if (lastName.value === "") {
     document.getElementById("lastNameError").style.display = "block";
-    if (!arrayContainsString(validationErrors, "lastNameError")) {
-      validationErrors.push("lastNameError");
+    if (validFields.includes("lastName")) {
+      validFields = validFields.filter(
+        validationError => validationError !== "lastName"
+      );
     }
   } else {
     document.getElementById("lastNameError").style.display = "none";
-    if (arrayContainsString(validationErrors, "lastNameError")) {
-      validationErrors = validationErrors.filter(
-        validationError => validationError !== "lastNameError"
-      );
+    if (!validFields.includes("lastName")) {
+      validFields.push("lastName");
     }
   }
 });
@@ -54,22 +50,24 @@ lastName.addEventListener("blur", function() {
 email.addEventListener("blur", function() {
   if (email.value === "") {
     document.getElementById("emailError").style.display = "block";
-    if (!arrayContainsString(validationErrors, "emailError")) {
-      validationErrors.push("emailError");
+    if (validFields.includes("email")) {
+      validFields = validFields.filter(
+        validationError => validationError !== "email"
+      );
     }
   }
   if (emailRegex.test(email.value) === false) {
     document.getElementById("emailError").style.display = "block";
-    if (!arrayContainsString(validationErrors, "emailError")) {
-      validationErrors.push("emailError");
+    if (validFields.includes("email")) {
+      validFields = validFields.filter(
+        validationError => validationError !== "email"
+      );
     }
     return false;
   } else {
     document.getElementById("emailError").style.display = "none";
-    if (arrayContainsString(validationErrors, "emailError")) {
-      validationErrors = validationErrors.filter(
-        validationError => validationError !== "emailError"
-      );
+    if (!validFields.includes("email")) {
+      validFields.push("email");
     }
     return true;
   }
@@ -79,15 +77,15 @@ email.addEventListener("blur", function() {
 message.addEventListener("blur", function() {
   if (message.value === "") {
     document.getElementById("messageError").style.display = "block";
-    if (!arrayContainsString(validationErrors, "messageError")) {
-      validationErrors.push("messageError");
+    if (validFields.includes("message")) {
+      validFields = validFields.filter(
+        validationError => validationError !== "message"
+      );
     }
   } else {
     document.getElementById("messageError").style.display = "none";
-    if (arrayContainsString(validationErrors, "messageError")) {
-      validationErrors = validationErrors.filter(
-        validationError => validationError !== "messageError"
-      );
+    if (!validFields.includes("message")) {
+      validFields.push("message");
     }
   }
 });
@@ -96,8 +94,8 @@ var submitButton = document.getElementById("submitContact");
 
 submitButton.addEventListener("click", function(e) {
   e.preventDefault();
-  console.log(validationErrors);
-  if (validationErrors.length === 0) {
+  console.log(validFields);
+  if (validFields.length === 4) {
     document.getElementById("contactForm").submit();
   }
 });
