@@ -92,86 +92,102 @@ body {
 /*Home Page*/
 
 /*About*/
-* {
-  box-sizing: border-box;
-}
-
-.slideshow-wrap {
-  width: 100%;
-  margin: auto;
-}
 
 .slideshow-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.buttons {
   position: relative;
-}
-
-.mySlides {
-  display: none;
-}
-
-.previous,
-.next {
+  display: inline-block;
   cursor: pointer;
-  position: absolute;
-  top: 40%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 20px 20px;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.previous {
+  background-image: url(../images/arrow-back.svg);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .next {
-  right: 0;
+  background-image: url(../images/arrow-forward.svg);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.cursor {
-  cursor: pointer;
+.buttons span {
+  position: relative;
+  display: inline-block;
+  transform: translateX(0);
+  transition: transform 0.3s ease;
 }
 
-.previous:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.9);
+.previous:hover span {
+  transform: translateX(-10px) scale(1.2);
 }
 
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+.next:hover span {
+  transform: translateX(10px) scale(1.2);
 }
 
-.caption-container {
+.slideshow-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.slideshow-nav li {
+  display: flex;
+  flex: 2;
   text-align: center;
-  background-color: #222;
-  padding: 2px 16px;
-  color: white;
 }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.slideshow-images {
+  max-width: 100%;
+  display: none;
+  box-shadow: 10px 10px 20px 0 rgba(94, 47, 59, 0.2);
 }
 
-/* Six columns side by side */
-.column {
-  float: left;
-  width: 16.66%;
+.slideshow-images.active-image {
+  display: block;
+  animation: fadeImg 0.8s;
 }
 
-/* Add a transparency effect for thumnbail images */
-.demo {
-  opacity: 0.6;
+.slideshow-nav .arrow {
+  flex: 0 0 15%;
 }
 
-.active,
-.demo:hover {
-  opacity: 1;
+.slideshow-nav a {
+  flex-basis: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.slideshow-nav span {
+  display: block;
+  width: 100%;
+}
+
+@keyframes fadeImg {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 /*Contact Form*/
@@ -249,7 +265,7 @@ footer p {
     padding: 5px;
   }
 
-  nav {
+  .main-nav {
     display: flex;
     justify-content: space-around;
     align-content: right;
