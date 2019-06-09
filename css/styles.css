@@ -190,6 +190,12 @@ body {
   }
 }
 
+/*Location*/
+
+#map {
+  height: 100%;
+}
+
 /*Contact Form*/
 
 .contact-container {
