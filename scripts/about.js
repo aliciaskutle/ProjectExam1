@@ -1,3 +1,5 @@
+// Slideshow
+
 var images = document.querySelectorAll(".slideshow-images");
 var imageCount = images.length;
 var nextImage = document.querySelector(".next");
@@ -14,7 +16,6 @@ function displayNextImage() {
   }
 
   images[count].classList.add("active-image");
-  console.log(count);
 }
 
 function displayPreviousImage() {
@@ -27,12 +28,9 @@ function displayPreviousImage() {
   }
 
   images[count].classList.add("active-image");
-  console.log(count);
 }
 
 function keyPress(e) {
-  e = e || window.event;
-
   if (e.keyCode == "37") {
     displayPreviousImage();
   } else if (e.keyCode == "39") {
@@ -43,3 +41,18 @@ function keyPress(e) {
 nextImage.addEventListener("click", displayNextImage);
 previousImage.addEventListener("click", displayPreviousImage);
 document.addEventListener("keydown", keyPress);
+
+// Number of people in space
+
+function peopleInSpace() {
+  fetch("http://api.open-notify.org/astros.json")
+    .then(response => response.json())
+    .then(data => peopleInSpaceInfo(data.number))
+    .catch(err => console.error(err));
+}
+
+function peopleInSpaceInfo(number) {
+  document.getElementById("people-in-space-count").innerHTML = number;
+}
+
+peopleInSpace();
