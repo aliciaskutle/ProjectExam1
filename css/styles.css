@@ -292,7 +292,7 @@ body {
   margin: 20px auto;
   padding: 10px 0 40px 0;
   align-content: center;
-  width: 55%;
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -306,15 +306,20 @@ h2 {
   color: #ffffff;
 }
 
-h2 {
+.contact-form p {
+  margin-top: 20px;
+}
+
+.contact-form-head h2 {
   font-size: 30px;
   text-align: center;
+  margin: 20px;
 }
 
 input[type="text"] {
   width: 100%;
   border: solid 1px lightgrey;
-  height: 20px;
+  height: 25px;
   padding: 10px 0;
   outline: none;
 }
@@ -333,7 +338,8 @@ button {
   color: #ffffff;
   border: none;
   font-size: 20px;
-  margin: 10px 0;
+  margin-top: 20px;
+  padding: 5px;
 }
 
 .error {
@@ -350,7 +356,7 @@ footer p {
   margin: 0 auto;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   /*Header*/
 
   .navbar-button {
@@ -425,5 +431,104 @@ footer p {
   .timeline-info {
     display: flex;
     flex-direction: row;
+  }
+
+  /*Contact*/
+  .contact-container {
+    width: 700px;
+  }
+
+  textarea {
+    height: 180px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  /*Header*/
+
+  .navbar-button {
+    display: none;
+  }
+
+  #logo {
+    padding: 5px;
+  }
+
+  .main-nav {
+    display: flex;
+    justify-content: space-around;
+    align-content: right;
+    min-height: 6vh;
+  }
+
+  .nav-links {
+    display: flex;
+    width: 40%;
+  }
+
+  .nav-links li {
+    list-style: none;
+    background-color: transparent;
+    border-bottom: none;
+  }
+
+  .nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 5px 10px 5px 10px;
+    margin: 0 10px;
+  }
+
+  .menu-links {
+    display: flex;
+    justify-content: right;
+    margin: 20px 0;
+  }
+  li a:hover {
+    background-color: rgb(104, 105, 104);
+  }
+
+  .active {
+    border-bottom: #ffffff 2px solid;
+  }
+
+  /*About*/
+  .slideshow-container {
+    width: 70%;
+    margin: auto;
+  }
+
+  /*History*/
+
+  .timeline-wrap {
+    width: 90%;
+  }
+
+  .timeline-images {
+    width: 70%;
+    height: 70%;
+  }
+
+  .timeline-content {
+    width: 600px;
+  }
+
+  .timeline-info {
+    display: flex;
+    flex-direction: row;
+  }
+  /*Contact*/
+  .contact-container {
+    width: 900px;
+  }
+
+  textarea {
+    height: 250px;
+  }
+
+  input[type="text"] {
+    height: 30px;
   }
 }
