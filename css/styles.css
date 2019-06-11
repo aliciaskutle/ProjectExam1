@@ -190,6 +190,10 @@ body {
 }
 
 /* History */
+.timeline-container h1 {
+  color: #fff;
+  text-align: center;
+}
 
 .timeline-content h2 {
   color: #000000;
