@@ -90,6 +90,63 @@ body {
 
 /*Home Page*/
 
+.homepage-head {
+  margin: 40px 20px;
+}
+
+.h1-1 {
+  font-size: 30px;
+  color: #fff;
+}
+
+.h1-2 {
+  font-size: 40px;
+  color: #fff;
+}
+
+.homepage-head p {
+  color: #fff;
+  padding: 20px 0;
+  margin-right: 60px;
+}
+
+.link1 {
+  background-image: url(../images/homepage-link-1.jpg);
+}
+
+.link2 {
+  background-image: url(../images/homepage-link-2.jpg);
+}
+
+.link3 {
+  background-image: url(../images/homepage-link-3.jpg);
+}
+
+.link1,
+.link2,
+.link3 {
+  display: block;
+  margin: 40px auto;
+  text-align: center;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: #000000 1px solid;
+}
+
+.homepage-link a {
+  position: relative;
+  top: 75%;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  background-color: rgb(196, 34, 34);
+  border: rgb(180, 32, 32) 1px solid;
+  padding: 7.5px 10px;
+  border-radius: 30px;
+  text-transform: uppercase;
+}
+
 /*About*/
 
 .slideshow-container {
@@ -417,6 +474,26 @@ footer p {
     border-bottom: #ffffff 2px solid;
   }
 
+  /*Home page*/
+
+  .homepage-head {
+    margin: 40px 100px;
+  }
+
+  .homepage-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .homepage-link-container {
+    flex: 1;
+  }
+
+  .homepage-link {
+    margin: 0 auto 40px auto;
+  }
+
   /*About*/
   .slideshow-container {
     width: 70%;
@@ -526,6 +603,45 @@ footer p {
 
   .active {
     border-bottom: #ffffff 2px solid;
+  }
+
+  /*Home page*/
+
+  .homepage-wrap {
+    width: 70%;
+    margin: auto;
+  }
+
+  .homepage-head {
+    margin: 60px 80px;
+  }
+
+  .h1-1 {
+    font-size: 40px;
+  }
+
+  .h1-2 {
+    font-size: 60px;
+  }
+
+  .homepage-head p {
+    font-size: 20px;
+    padding: 20px 0;
+    margin-right: 60px;
+  }
+
+  .homepage-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .homepage-link-container {
+    flex: 1;
+  }
+
+  .homepage-link {
+    margin: 0 auto 40px auto;
   }
 
   /*About*/
