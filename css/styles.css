@@ -417,6 +417,32 @@ button {
   display: none;
 }
 
+/*Confirmation*/
+
+.contact-form-head img {
+  width: 100px;
+  height: 100px;
+}
+
+.contact-form-head p {
+  font-size: 15px;
+  margin: 30px 5px;
+}
+
+.confirmation-link {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-container a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  background-color: #040d8d;
+  border: #0b0f4d 1px solid;
+  padding: 7.5px 10px;
+  border-radius: 30px;
+}
+
 /*Footer*/
 
 footer p {
