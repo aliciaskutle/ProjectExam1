@@ -353,7 +353,7 @@ body {
   padding: 10px 0 40px 0;
   align-content: center;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(200, 200, 200);
 }
 
 .contact-form {
@@ -363,7 +363,7 @@ body {
 
 div .input,
 h2 {
-  color: #ffffff;
+  color: #000000;
 }
 
 .contact-form p {
@@ -378,7 +378,7 @@ h2 {
 
 input[type="text"] {
   width: 100%;
-  border: solid 1px lightgrey;
+  border: solid 1px rgb(117, 115, 115);
   height: 25px;
   padding: 10px 0;
   outline: none;
@@ -386,7 +386,7 @@ input[type="text"] {
 
 textarea {
   width: 100%;
-  border: solid 1px lightgrey;
+  border: solid 1px rgb(117, 115, 115);
   height: 120px;
   padding: 10px 0;
   outline: none;
