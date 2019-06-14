@@ -156,8 +156,9 @@ body {
 
 .about-head-info h2,
 .about-head-info p {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   text-align: center;
+  padding: 10px;
 }
 
 .about-head-info {
@@ -288,6 +289,11 @@ body {
 .location-wrap {
   font-family: "Roboto";
   margin-bottom: 30px;
+}
+
+.location-content {
+  padding: 15px 5px;
+  background: rgb(0, 0, 0, 0.8);
 }
 
 .location-wrap h1 {
