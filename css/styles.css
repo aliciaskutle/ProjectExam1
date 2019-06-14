@@ -154,7 +154,21 @@ body {
 
 /*About*/
 
-.about-head-info h2,
+.about-wrap h1 {
+  text-transform: uppercase;
+  color: #fff;
+  margin: 10px auto;
+}
+
+.about-head-info h2 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  background: #040d8d;
+  border: #030a68 1px solid;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
 .about-head-info p {
   color: rgb(255, 255, 255);
   text-align: center;
@@ -329,6 +343,19 @@ body {
   border-radius: 30px;
   text-transform: uppercase;
   margin-bottom: 25px;
+}
+
+.iss-video {
+  text-align: center;
+
+  margin: 0 auto;
+  background: rgb(0, 0, 0, 0.8);
+  padding: 30px 0;
+}
+
+.iss-video iframe {
+  width: 300px;
+  height: 165px;
 }
 
 /* History */
@@ -709,6 +736,17 @@ footer p {
     width: 100%;
   }
 
+  .iss-video {
+    text-align: center;
+    margin: 0 auto;
+    background: rgb(0, 0, 0, 0.8);
+  }
+
+  .iss-video iframe {
+    width: 560px;
+    height: 315px;
+  }
+
   /*History*/
 
   .timeline-container h1 {
@@ -946,6 +984,17 @@ footer p {
   .location-content {
     padding: 20px;
     background: none;
+  }
+
+  .iss-video {
+    margin: 0 auto;
+    text-align: center;
+    background: rgb(0, 0, 0, 0.8);
+  }
+
+  .iss-video iframe {
+    width: 560px;
+    height: 315px;
   }
 
   /*History*/
