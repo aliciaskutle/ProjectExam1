@@ -52,9 +52,19 @@
       <div class="location-wrap">
         <div class="location-container1">
           <div class="location-flex-1">
-            <h1>Right above us?</h1>
-            <h2>This is where the ISS is right now!</h2>
-            <p>Information about the route of the space craft!</p>
+            <div class="location-content">
+              <h1>Right above us?</h1>
+              <p>
+                The giant floating laboratory has been travelling at five miles
+                per second since it was launched.
+              </p>
+              <p>
+                The International Space Station orbits the earth 15.54 times a
+                day.
+              </p>
+
+              <h2>This is where the ISS is right now!</h2>
+            </div>
           </div>
 
           <div id="map" class="location-flex-1"></div>
@@ -62,14 +72,55 @@
 
         <div class="location-container2">
           <div class="location-flex-2">
-            <h2>The space craft</h2>
-            <p>
-              Information about the space craft and different interesting
-              details!
-            </p>
+            <div class="location-content">
+              <p>
+                The ISS serves as a microgravity and space environment research
+                laboratory in which crew members conduct experiments in biology,
+                human biology, physics, astronomy, meteorology, and other
+                fields.
+              </p>
+              <p>
+                The ISS is the largest human-made body in low Earth orbit and
+                can often be seen with the naked eye from Earth.
+              </p>
+              <p>
+                Learn more about when and how you can spot the station:
+              </p>
+
+              <div class="location-link">
+                <a href="https://spotthestation.nasa.gov/home.cfm"
+                  >Spot the station</a
+                >
+              </div>
+            </div>
           </div>
           <div class="location-flex-2">
             <img class="iss-image" src="images/iss.jpg" style="width:100%" />
+          </div>
+        </div>
+
+        <div class="location-container3">
+          <div class="location-flex-3">
+            <div class="location-content">
+              <h2>The space craft</h2>
+              <p>
+                Length: 72.8 m (239 ft)
+              </p>
+              <p>
+                Width: 108.5 m (356 ft)
+              </p>
+              <p>
+                Height: ≈ 20 m (66 ft)
+              </p>
+              <div class="location-link">
+                <a href="https://www.nasa.gov/feature/facts-and-figures"
+                  >More facts and figures</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="location-flex-3">
+            <img class="iss-image" src="images/iss2.jpg" style="width:100%" />
           </div>
         </div>
       </div>
@@ -78,6 +129,7 @@
         <p>© Alicia Skutle 2019</p>
       </footer>
     </div>
+
     <script src="scripts/location.js"></script>
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEh-5nVQIiL_iofnGlMk3-KfgVJwmZxek&callback=initMap"
