@@ -701,6 +701,7 @@ footer p {
 
   .location-content {
     padding: 10px;
+    background: none;
   }
 
   .iss-image {
@@ -944,6 +945,7 @@ footer p {
 
   .location-content {
     padding: 20px;
+    background: none;
   }
 
   /*History*/
