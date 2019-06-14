@@ -142,6 +142,15 @@ body {
   text-transform: uppercase;
 }
 
+.social-media-links {
+  margin: 10px auto;
+  text-align: center;
+}
+
+.social-media-links a {
+  padding: 5px;
+}
+
 /*About*/
 
 .slideshow-container {
